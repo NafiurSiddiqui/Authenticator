@@ -1,0 +1,84 @@
+
+.auth {
+  margin: 3rem auto;
+  width: 95%;
+  max-width: 25rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgb(192, 192, 192);
+  border: 1px solid rgb(192, 192, 192);
+  padding: 1rem;
+  text-align: center;
+  color: var(--txt);
+  height: 65vh;
+}
+
+.auth h1 {
+  text-align: center;
+  color:var(--txt);
+  margin-bottom: 1.3em;
+ 
+}
+
+.control {
+  margin-bottom: 0.8rem;
+}
+
+.control label {
+  display: block;
+  color: var(--txtLight);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  
+}
+
+.control input {
+  font: inherit;
+  background-color: #bae5c0;
+  color: #102621;
+  border-radius: 4px;
+  border: 1px solid white;
+  width: 100%;
+  text-align: left;
+  padding: 0.25rem;
+}
+
+
+
+.actions {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actionsBtn {
+  cursor: pointer;
+  font: inherit;
+  color: var(--txt);
+  border: 1px solid var(--txt);
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+  transition: all ease-in-out 0.1s;
+  width: 100%;
+  margin-top: 0.8rem;
+}
+
+.actionsBtn:hover {
+  border: 1px solid var(--txtLight);
+  box-shadow: 0px 2px 4px rgba(54, 54, 54, 0.458);
+}
+
+.toggle {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: var(--txt);
+  border: none;
+  padding: 0.15rem 1.5rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+.toggle:hover {
+  background-color: transparent;
+  color: var(--txtLight);
+  font-size: 0.9rem;
+}
