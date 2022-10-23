@@ -4,6 +4,7 @@ import AuthContext from '../../store/auth-context';
 import classes from './ProfileForm.module.css';
 
 const ProfileForm = () => {
+	
 	const newPasswordInputRef = useRef();
 	const authCtx = useContext(AuthContext);
 
@@ -16,7 +17,7 @@ const ProfileForm = () => {
 
 		// add validation
 		fetch(
-			`https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyCTFNG5N9byzmtS5QxvfYuVflZte5e3FEc`,
+			`https://identitytoolkit.googleapis.com/v1/accounts:update?key=${process.env.REACT_APP_FIREBASE_API_KEY}`,
 			{
 				method: 'POST',
 				body: JSON.stringify({
