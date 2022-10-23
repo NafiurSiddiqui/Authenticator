@@ -30,13 +30,15 @@ const AuthForm = () => {
 		setIsLoading(true);
 
 		let url;
+
+	
 		
 		if (isLogin) {
 			url =
-				`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCTFNG5N9byzmtS5QxvfYuVflZte5e3FEc`;
+				`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${process.env.REACT_APP_FIREBASE_API_KEY}`;
 		} else {
 			url =
-				`https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCTFNG5N9byzmtS5QxvfYuVflZte5e3FEc`;
+				`https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${process.env.REACT_APP_FIREBASE_API_KEY}`;
 		}
 
 		fetch(url, {
@@ -81,6 +83,8 @@ const AuthForm = () => {
 				
 				alert(err.message);
 			});
+
+		
 	};
 
 	return (
