@@ -2,11 +2,13 @@ const PORT = process.env.PROT || 8080;
 const express = require('express');
 const cors = require('cors');
 const admin = require('firebase-admin');
-var serviceAccount = require("./authenticator-dev-nuff-firebase-adminsdk-e17h5-8aecdc4afc.json");
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
-});
+//download firebase service accounnt for the key
+// var serviceAccount = require("path to the downloaded key");
+
+// admin.initializeApp({
+//   credential: admin.credential.cert(serviceAccount)
+// });
 
 
 require('dotenv').config();
