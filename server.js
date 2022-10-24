@@ -1,19 +1,32 @@
-const PORT = 8000;
-
+const PORT = process.env.PROT || 8000;
 const express = require('express');
 const cors = require('cors');
-const axios = require('axios');
+const admin = require('firebase-admin');
+var serviceAccount = require("./authenticator-dev-nuff-firebase-adminsdk-e17h5-8aecdc4afc.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount)
+});
+
 
 require('dotenv').config();
 
 const app = express();
 
+app.use(express.json());
+
+
+
 app.get('/', (req,res)=> {
     res.json('YO!!');
 })
 
-app.get('/auth', (req,res)=> {
-    axios.request()
+app.post('/auth', async(req,res)=> {
+
+  //isLogin?
+  //run signIn
+  //else
+  //run signup
 })
 
 
