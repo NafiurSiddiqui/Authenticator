@@ -25,8 +25,8 @@ const calculateRemainingTime = (expirationTime) => {
 
 //
 const retrieveStoredToken = () => {
+	//response payload
 	const storedToken = localStorage.getItem('token');
-
 	const storedExpirationDate = localStorage.getItem('expirationTime');
 
 	const remainingTime = calculateRemainingTime(storedExpirationDate);
@@ -56,7 +56,7 @@ export const AuthContextProvider = (props) => {
 	}
 	//init state with 'intiToken'
 	const [token, setToken] = useState(initialToken);
-	
+
 	//check login status
 	const userIsLoggedIn = !!token;
 

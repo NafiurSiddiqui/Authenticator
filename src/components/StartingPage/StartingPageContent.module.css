@@ -4,13 +4,16 @@
 	border: 2px solid var(--primaryBG);
 	width: 100%;
 	max-width: 400px;
-	/* height: 40vh; */
 	padding: 0.8em;
 	border-radius: 0.4em;
 }
 
 .starting h2 {
-	margin-bottom: 2em;
+	color: rgb(247, 121, 86);
+}
+
+.starting h1 {
+	color: var(--txt);
 }
 
 .btn {

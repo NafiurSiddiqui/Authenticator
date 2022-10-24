@@ -12,6 +12,7 @@ course project where I learn about user authentication in depth with Firebase.
 - Upgraded to react@18
 - Router upgraded to newer version.
 - conditionally render content based on routing and auth information
+- custom error message and feedback
 - firebase admin panel
 - tried to hide the API key from browser with a backend server (failed miserably :( and waiting for the time when i get to learn backend ) and kept the file there since i would like to poke around with it later.
 
