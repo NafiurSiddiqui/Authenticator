@@ -1,0 +1,44 @@
+.starting {
+	margin: 3rem auto;
+	text-align: center;
+	border: 2px solid var(--primaryBG);
+	width: 100%;
+	max-width: 400px;
+	/* height: 40vh; */
+	padding: 0.8em;
+	border-radius: 0.4em;
+}
+
+.starting h2 {
+	margin-bottom: 2em;
+}
+
+.btn {
+	width: 100%;
+	padding: 0.4em;
+	border-radius: 0.8em;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(0 147 98);
+margin-bottom: 1.5em;
+	font-size: 1.2rem;
+	color: whitesmoke;
+}
+
+.btn:hover {
+	background-color: rgb(0 113 75);
+}
+
+a {
+	text-decoration: none;
+	width: 100%;
+}
+
+ .link {
+  font-weight: bold;
+  color:rgb(0 147 98) ;
+}
+
+.link:hover{
+  color: rgb(0 113 75);
+}

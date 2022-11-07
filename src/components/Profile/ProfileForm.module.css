@@ -1,0 +1,48 @@
+.form {
+  width: 95%;
+  max-width: 25rem;
+  margin: 2rem auto;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--txt);
+  display: block;
+}
+
+.control input {
+  display: block;
+  font: inherit;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--primaryBG);
+  padding: 0.25rem;
+  background-color: #bae5c0;
+  color: #102621;
+}
+
+.action {
+  margin-top: 1.5rem;
+}
+
+.action button {
+  font: inherit;
+	background-color: transparent;
+  color: var(--txt);
+	border: 2px solid var(--primaryBG);
+	padding: 0.5rem 1.5rem;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+
+
+.action button:hover {
+  border: 1px solid var(--txt);
+	box-shadow: 0px 2px 4px rgba(54, 54, 54, 0.389);
+}
