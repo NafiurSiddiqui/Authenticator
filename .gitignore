@@ -25,3 +25,5 @@ yarn-debug.log*
 yarn-error.log*
 
 authenticator-dev-nuff-firebase-adminsdk-e17h5-8aecdc4afc.json
+
+.firebase
